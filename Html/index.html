@@ -10,96 +10,45 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<header>
-  <nav class="header">
-    <ul>
-      <li><img src="" width="110px" height="110px" alt="logo"></li>
-      <li><a href="/html/index.html"><strong>
-            <h3>HOME</h3>
-          </strong></a></li>
-      <select class="form-select form-select-sm" aria-label="Small select example">
-        <option selected><strong>SOPORTE</strong></option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-
-    </ul>
+<header class="encabezado">
+  <nav class="navbar navbar bg-info navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/Assest/logo sin letras y ajustada.png" width="100px" height="70px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Soporte
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Email</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </div>
+    </div>
+  </nav>
 </header>
 <style>
-  ul {
-    justify-content: start;
+  .encabezado {
+    margin-bottom: 10px;
   }
-
-  header {
-    background-color: rgb(69, 101, 108);
-    width: auto;
-
-  }
-
-  .form-select {
-    font-size: 28px;
-    width: 150px;
-    /* Ajusta el ancho */
-    height: 60px;
-    /* Ajusta la altura */
-    border-radius: 20px;
-    /* Opcional: para bordes más rectos */
-    padding: 5px;
-    /* Controla el relleno interno */
-    background-color: transparent;
-    /* Fondo transparente */
-    border: none;
-    /* Sin borde */
-    -webkit-appearance: none;
-    /* Eliminar estilos por defecto en WebKit (Chrome, Safari) */
-    -moz-appearance: none;
-    /* Eliminar estilos por defecto en Firefox */
-    appearance: none;
-    /* Eliminar estilos por defecto */
-    color: white;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-
-  }
-
-  .header {
-
-
-    text-decoration: none;
-    text-align: center;
-
-
-
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: #dfece6;
-
-
-
-
-  }
-
-  nav ul li {
-    list-style: none;
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-top: 8px;
-  }
-
-  nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+  .iconos {
+    margin-top: 15px;
   }
 </style>
-</nav>
-</header>
-
-
 
 
 
@@ -151,7 +100,7 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-6">
-                <img src="/Assest/el otro pibe del rack.jpg" class="d-block w-100" alt="Slide 2">
+                <img src="/Assest/el otro pibe del rack.jpg" class="d-block w-100 shadow-lg" alt="Slide 2">
               </div>
               <div class="col-md-6 d-flex align-items-center">
                 <div class="p-4">
@@ -188,17 +137,101 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="row text-center">
-        <div class="col"> Lorem ipsum dolor sit.
+      <div class="iconos">
+      <div class="row text-center flex gap-3">
+        <div class="col "> <img src="/Assest/papelitos.jpg" width="100px" height="100px">
         </div>
-        <div class="col">Lorem ipsum dolor sit.</div>
-        <div class="col">Lorem ipsum dolor sit.</div>
+        <div class="col"><img src="/Assest/foto video.jpg" alt="" width="100px" height="100px"></div>
+        <div class="col"><img src="/Assest/enviar.jpg" alt="" width="100px" height="100px">.</div>
+        <div class="col"><img src="/Assest/ubicacion.jpg" alt="" width="100px" height="100px"></div>
+      </div>
+
+      </div>
+    <div class="imagenes">
+      <div class="row">
+        <div col-md-4><div class="card" style="width: 18rem;">
+          <img src="/Assest/cards.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">¡Gran alcance!</h5>
+            <p class="card-text">¡Nuestro wifi tiene un alcance espectacular!.</p>
+            <a href="#" class="btn btn-primary">Contratalo</a>
+          </div>
+        </div>
+        </div>
+        <div col-md-4><div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+        <div col-md-4><div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div col-md-4><div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gran alcance de Red</h5>
+            <p class="card-text">.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+        <div col-md-4><div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+        <div col-md-4><div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
       </div>
 
-
+<style>
+  .col {
+    border: 1px solid #0dcaf0;
+  }
+  .iconos {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .imagenes {
+    margin-top: 50px;
+  }
+</style>
 
 
 

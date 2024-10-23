@@ -11,8 +11,8 @@
 </head>
 
 <header class="encabezado">
-  <nav class="navbar navbar bg-info navbar-expand-lg ">
-    <div class="container-fluid">
+  <nav class="navbar navbar bg-info navbar-expand-lg d-flex  ">
+    <div class="container-fluid ">
       <a class="navbar-brand" href="#"><img src="/Assest/logo sin letras y ajustada.png" width="100px" height="70px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Institución</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,31 +48,22 @@
   .iconos {
     margin-top: 15px;
   }
+  .elrow {
+    margin-bottom: 35px;
+  }
+  .imagenes {
+    margin-left:60px;
+    margin-bottom: 20px;
+  }
+  html, body {
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
   <main>
     <div class="container-fluid">
-      <div id="carouselWithText" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselWithText" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselWithText" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -126,7 +117,6 @@
             </div>
           </div>
         </div>
-
         <!-- Controles de navegación -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselWithText" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -147,84 +137,86 @@
       </div>
 
       </div>
-    <div class="imagenes">
-      <div class="row">
-        <div col-md-4><div class="card" style="width: 18rem;">
-          <img src="/Assest/cards.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">¡Gran alcance!</h5>
-            <p class="card-text">¡Nuestro wifi tiene un alcance espectacular!.</p>
-            <a href="#" class="btn btn-primary">Contratalo</a>
+      <div class="imagenes container-fluid">
+        <div class="elrow">
+          <div class="row">
+            <div class="col-md-4 ">
+              <div class="card " style="width: 18rem;">
+                <img src="/Assest/cards.webp" class="card-img-top" alt="...">
+                <div class="card-body border-top border-info border-3">
+                  <h5 class="card-title">Gran alcance</h5>
+                  <p class="card-text">Nuestro wifi tiene un alcance espectacular.</p>
+                  <a href="#" class="btn btn-primary">Contrátalo</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="/Assest/el pibe con el vaquero y los cables naranjas trabajdno en el rack.webp" class="card-img-top" alt="..." width="286px" height="190.66">
+                <div class="card-body border-top border-info border-3">
+                  <h5 class="card-title">De nivel empresarial</h5>
+                  <p class="card-text">¿Tu emperesa necesita internet? Nos necesitas a nosotros</p>
+                  <a href="#" class="btn btn-primary">Contactanos</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="/Assest/martillando el rack xd.webp" class="card-img-top" alt="...">
+                <div class="card-body border-top border-info border-3">
+                  <h5 class="card-title">Herramientas certificadas</h5>
+                  <p class="card-text">Todas nuestras herraminetas son de la mejor calidad</p>
+                  <a href="#" class="btn btn-primary">Encuentralas aqui</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-        <div col-md-4><div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="elrow2">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="/Assest/la piba en el rack.webp" class="card-img-top" alt="...">
+                <div class="card-body border-top border-info border-3">
+                  <h5 class="card-title">Gran alcance de Red</h5>
+                  <p class="card-text">El mayor rango de todo el Alto Valle</p>
+                  <a href="#" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;;">
+                <img src="/Assest/el cisco XDxd.png" class="card-img-top" alt="..." height="190.33">
+                <div class="card-body border-top border-info border-3">
+                  <h5 class="card-title">Mapeo de red</h5>
+                  <p class="card-text">Diseñamos tu red a medida en el simulador cisco.</p>
+                  <a href="#" class="btn btn-primary">Simulador</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="/Assest/el pibe cantidad de consumo XDdonpuntosve.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-top border-info border-3">
+                  <h5 class="card-title">¡Bajo consumo electrico!</h5>
+                  <p class="card-text">Nuestros dispositivos ocupan la minima cantidad de electricidad.</p>
+                  <a href="#" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-        <div col-md-4><div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
         </div>
       </div>
-      <div class="row">
-        <div col-md-4><div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gran alcance de Red</h5>
-            <p class="card-text">.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-        <div col-md-4><div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-        <div col-md-4><div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        </div>
       </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
 <style>
   .col {
     border: 1px solid #0dcaf0;
   }
   .iconos {
+    margin-top: 40px;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -515,7 +507,49 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <footer>
-
+    <footer class="bg-dark text-white text-center text-lg-start">
+      <div class="container p-4">
+        <!-- Sección de enlaces -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li><img src="/Assest/letras.png" alt="" width="100px" height="100px"></li>
+              
+            </ul>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase"> Creadores principales</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" class="text-white">Tomas Jara</a></li>
+              <li><a href="#!" class="text-white">Bruno Godoy</a></li>
+              <li><a href="#!" class="text-white">Benjamin aguilera</a></li>
+              <li><a href="#!" class="text-white">Valentina contrerrras</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Fuentes Principales</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" class="text-white">Edusur</a></li>
+              <li><a href="#!" class="text-white"> </a></li>
+              <li><a href="#!" class="text-white">Enlace 3</a></li>
+              <li><a href="#!" class="text-white">Enlace 4</a></li>
+            </ul>
+          </div>
+    
+          
+        </div>
+        <!-- Sección de enlaces -->
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright: 
+        <a class="text-white" href="https://tusitio.com/">TuSitio.com</a>
+      </div>
+    </footer>
+    
 
 
 
